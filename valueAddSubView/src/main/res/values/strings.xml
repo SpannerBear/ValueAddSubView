@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ValueAddSubView Library</string>
+    <string name="out_of_max">不能超过最大值</string>
+    <string name="out_of_min">不能超过最小值</string>
+</resources>
