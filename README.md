@@ -33,3 +33,20 @@
         <attr name="vHeight" format="dimension"/>
 ```
 
+####依赖到你的项目:
+在项目根build.gradle添加以下代码
+```
+allprojects {
+		     repositories {
+		    	    ...
+		        maven { url 'https://jitpack.io' }
+			     	}
+	}
+```
+
+在module的build.gradle添加依赖
+```
+	dependencies {
+	    	compile 'com.github.User:Repo:Tag'
+	}
+```
