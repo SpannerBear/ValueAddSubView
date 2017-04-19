@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import cn.bannerbear.view.FocusManager;
+import cn.spannerbear.view.FocusManager;
 
 
 public class MainActivity extends AppCompatActivity {

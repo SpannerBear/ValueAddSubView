@@ -1,4 +1,4 @@
-package cn.bannerbear.view;
+package cn.spannerbear.view;
 
 import android.app.Activity;
 import android.content.Context;

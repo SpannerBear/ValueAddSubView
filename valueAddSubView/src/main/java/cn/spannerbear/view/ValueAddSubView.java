@@ -1,4 +1,4 @@
-package cn.bannerbear.view;
+package cn.spannerbear.view;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import cn.bannerbear.view.R;
 
 /**
  * Created by SpannerBear on 2017/3/22.
