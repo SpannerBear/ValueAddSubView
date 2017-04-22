@@ -452,9 +452,14 @@ public class ValueAddSubView extends FrameLayout {
     @Override
     public void setEnabled(boolean enabled) {
         super.setEnabled(enabled);
-        mIvSub.setEnabled(enabled);
-        mIvAdd.setEnabled(enabled);
-        mEtCount.setEnabled(enabled);
+        if (enabled) {
+            mEtCount.setEnabled(true);
+            initIcon();
+        } else {
+            mIvSub.setEnabled(false);
+            mIvAdd.setEnabled(false);
+            mEtCount.setEnabled(false);
+        }
     }
     
     @Deprecated
