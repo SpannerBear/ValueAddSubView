@@ -288,6 +288,7 @@ public class ValueAddSubView extends FrameLayout {
      * 设置数值后调用,影响加减控件enable状态
      */
     protected final void initIcon() {
+        if (!isEnabled()) return;
         mIvAdd.setEnabled(mCurrValue + 1 <= mMaxValue);
         mIvSub.setEnabled(mCurrValue - 1 >= mMinValue);
     }
