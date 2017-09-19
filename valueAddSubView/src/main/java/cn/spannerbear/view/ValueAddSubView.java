@@ -103,8 +103,8 @@ public class ValueAddSubView extends FrameLayout {
             mEtCount.setBackgroundResource(textBgRes);
         }
         
-        mIvAdd.setBackgroundResource(addIconRes);
-        mIvSub.setBackgroundResource(subIconRes);
+        mIvAdd.setImageResource(addIconRes);
+        mIvSub.setImageResource(subIconRes);
         
         mMaxValue = max;
         mMinValue = min;
