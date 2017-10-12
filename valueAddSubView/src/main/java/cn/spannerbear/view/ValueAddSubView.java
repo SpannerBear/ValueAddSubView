@@ -83,8 +83,8 @@ public class ValueAddSubView extends FrameLayout {
         int defaultValue = typedArray.getInt(R.styleable.ValueAddSubView_vDefaultValue, 0);
         int max = typedArray.getInt(R.styleable.ValueAddSubView_vMaxValue, 99);
         int min = typedArray.getInt(R.styleable.ValueAddSubView_vMinValue, 0);
-        int maxWidth = typedArray.getInt(R.styleable.ValueAddSubView_vTextMaxWidth, 0);
-        int minWidth = typedArray.getInt(R.styleable.ValueAddSubView_vTextMinWidth, 0);
+        float maxWidth = typedArray.getDimension(R.styleable.ValueAddSubView_vTextMaxWidth, 0);
+        float minWidth = typedArray.getDimension(R.styleable.ValueAddSubView_vTextMinWidth, 0);
         float dividerWidth = typedArray.getDimension(R.styleable.ValueAddSubView_vDividerWidth, 0);
         int dividerColor = typedArray.getColor(R.styleable.ValueAddSubView_vDividerColor, 0);
         float height = typedArray.getDimension(R.styleable.ValueAddSubView_vHeight, 0);
@@ -112,10 +112,10 @@ public class ValueAddSubView extends FrameLayout {
         setValue(mDefaultValue, false);
         
         if (maxWidth != 0) {
-            mEtCount.setMaxWidth(maxWidth);
+            mEtCount.setMaxWidth((int) maxWidth);
         }
         if (minWidth != 0) {
-            mEtCount.setMinWidth(minWidth);
+            mEtCount.setMinWidth((int) minWidth);
         }
         if (dividerWidth != 0) {
             ViewGroup.LayoutParams layoutParams = mDividerLeft.getLayoutParams();
