@@ -1,4 +1,4 @@
-#ValueAddSubView
+#ValueAddSubView#
 
 一个使用方便,具有一定的自定义能力,过滤掉尽量多的无关数量监听的数值加减控件.
 
@@ -33,7 +33,7 @@
         <attr name="vHeight" format="dimension"/>
 ```
 
-####依赖到你的项目:
+####依赖到你的项目:####
 在项目根build.gradle添加以下代码
 ```
 allprojects {
